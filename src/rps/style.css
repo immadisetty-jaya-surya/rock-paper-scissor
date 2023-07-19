@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color:hotpink; */
+}
+#gamePlace{
+    border: 3px solid;
+    border-radius: 50px;
+    text-align: center;
+    height: 280px;
+    width: 600px;
+    background-color: beige;
+    font-family:cursive;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#gamePlace:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.choiceBtn{
+    line-height: 30px;
+    width: 150px;
+    background-color: cornflowerblue;
+    color:honeydew;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+    transition: background-color 1s ease;
+}
+.choiceBtn:hover{
+    background-color: aquamarine;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.choiceBtn:active{
+    background-color: cadetblue;
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+#playerText{
+    color:coral;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#computerText{
+    color: darkred;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#resultText{
+    color: darkmagenta;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fade-in 0.5s ease forwards;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
